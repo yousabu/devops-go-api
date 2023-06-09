@@ -1,0 +1,33 @@
+version: '3.1'
+services:
+  mysql:
+    image: mysql:8
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=instabug
+      - MYSQL_USER=instabug
+      - MYSQL_DATABASE=internship
+      - MYSQL_PASSWORD=instabug
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "mysql", "-u", "instabug", "-pinstabug"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - mynetwork
+
+  instabug:
+    image: instaapp:latest
+    ports:
+      - 9090:9090
+    env_file:
+      - .env
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:

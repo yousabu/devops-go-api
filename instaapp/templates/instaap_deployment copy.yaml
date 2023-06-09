@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: instabugapi
+  labels:
+    app: instabugapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: instabugapi
+  template:
+    metadata:
+      labels:
+        app: instabugapi
+    spec:
+      containers:
+      - name: instaap
+        image: youssefabu/instaapp
+        ports:
+        - containerPort: 9090
+        env:
+        - name: MYSQL_USER
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: user
+        - name: MYSQL_PASS
+          valueFrom: 
+            secretKeyRef:
+              name: mysql-secret
+              key: password
+        - name: MYSQL_PORT
+          valueFrom: 
+            secretKeyRef:
+              name: mysql-secret
+              key: port  
+              
+        - name: MYSQL_HOST
+          valueFrom: 
+            configMapKeyRef:
+              name: hostname
+              key: database_url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: instabugapi-service
+spec:
+  selector:
+    app: instabugapi
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 9090
+      targetPort: 9090
+      nodePort: 30000
+
