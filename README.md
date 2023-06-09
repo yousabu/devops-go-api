@@ -23,3 +23,7 @@
 ![Screenshot from 2023-06-09 16-06-48](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/a863bd79-b326-4df6-bf0a-1d6d8a946eeb)
 
 ## ArgoCD SETUP
+-You should run this commands on k8s cluster.
+    kubectl create namespace argocd
+    kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
