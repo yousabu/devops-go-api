@@ -8,7 +8,12 @@ pipeline {
                     def imageName = 'youssefabu/instaapp'
                     def dockerfile = './Dockerfile'
 
-                    sh "docker build -t ${imageName} -f ${dockerfile} ."
+                    try {
+                        sh " docker.build ${imageName} -f ${dockerfile} "
+                        echo "Docker image build successful"
+                    } catch (Exception e) {
+                        error "Docker image build failed: ${e.getMessage()}"
+                    }
                 }
             }
         }
@@ -35,3 +40,4 @@ pipeline {
         }
     }
 }
+
