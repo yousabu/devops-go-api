@@ -1,4 +1,4 @@
-FROM golang:1.18-alpine
+FROM golang:1.18-alpine AS build
 
 WORKDIR /app
 
@@ -8,7 +8,13 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o main .
+RUN CGO_ENABLED=0 go build -o main .
+
+FROM alpine:3.14
+
+WORKDIR /app
+
+COPY --from=build /app/main .
 
 EXPOSE 9090
 
