@@ -2,7 +2,7 @@
 - The `.env` file is used to store the required environment variables for the application. Ensure that you provide the correct values for `MYSQL_HOST`, `MYSQL_USER`, `MYSQL_PASS`, and `MYSQL_PORT`.
 - it shoud be in  instabug-intern-challenge/ dir.
 
-## Install Api Locally
+## Run Api Locally Using Golang and mysql-server
     git clone https://github.com/yousabu/instabug-intern-challenge.git
     cd instabug-intern-challenge/
     go build -o main .
@@ -11,9 +11,9 @@
 ## Build Docker Image
     docker build -t instaapp .
     
-## Install API Using Docker-Compose
+## Run API And It's Database Using Docker-Compose
     docker-compose up -d
-- In Docker-compose The Api Will Start Only After Mysql Be Healthy
+- In Docker-compose The Api Will Start Only After Mysql DB Be Healthy
 
 ## Screenshot From Running API
 ![Screenshot from 2023-06-09 15-55-26](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/21446643-0613-472c-b52a-704f13995208)
