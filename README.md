@@ -36,3 +36,4 @@
 #
 
 ## I also added autoscaling manifest for number of replicas
+![Screenshot from 2023-06-09 17-13-07](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/2d9db238-0c65-40ac-9738-6864b2129a6f)
