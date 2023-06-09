@@ -1,12 +1,13 @@
 ## Install Api Locally
 
 1. Clone the repository:
-git clone https://github.com/yousabu/instabug-intern-challenge.git
+- git clone https://github.com/yousabu/instabug-intern-challenge.git
 
 2. Navigate to the project directory:
-cd instabug-intern-challenge/
+- cd instabug-intern-challenge/
 
 3. Create a `.env` file and populate it with the required environment variables:
+
 MYSQL_HOST=<your_mysql_host>
 MYSQL_USER=<your_mysql_username>
 MYSQL_PASS=<your_mysql_password>
