@@ -9,3 +9,11 @@
     go build -o main .
     ./main
 
+    
+## Run API Using Docker-Compose
+1- Build Docker image:
+    ```shell
+    docker build -t instapi .
+2- Run Compose:
+    ```shell
+    docker-compose up -d
