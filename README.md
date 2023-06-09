@@ -32,3 +32,5 @@
 #
     kubectl apply -f Application.yaml
 
+
+** I Add autoscaling manifest for number of replicas **
