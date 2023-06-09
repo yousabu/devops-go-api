@@ -10,7 +10,7 @@
 
 ## Build Docker Image
     docker build -t instaapp .
-Dockerfile Built in the way that make it as lightweight as possible
+Dockerfile Built in the way that make it as lightweight as possible with all layer of security.
 ## Run API And It's Database Using Docker-Compose
     docker-compose up -d
 - In Docker-compose The Api Will Start Only After Mysql DB Be Healthy
@@ -36,10 +36,10 @@ and it also point to helm package.
 #
 
 
-## I also added autoscaling manifest for number of replicas for api deployment only
+## Added autoscaling manifest for number of replicas for api deployment only
 ![Screenshot from 2023-06-09 17-13-07](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/2d9db238-0c65-40ac-9738-6864b2129a6f)
 
 #
-. All Tests Done on Kubelet Cluster one master & one worker
+All Tests Done on Kubelet Cluster one master & one worker.
 
 ![Screenshot from 2023-06-09 17-18-08](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/2a7b5d50-0f1e-4008-9d0d-e194b2722981)
