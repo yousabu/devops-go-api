@@ -15,7 +15,7 @@
     docker-compose up -d
 - In Docker-compose The Api Will Start Only After Mysql DB Be Healthy
 
-## Screenshot From Running API
+## Screenshot From Running API Localy With Docker-compose
 ![Screenshot from 2023-06-09 15-55-26](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/21446643-0613-472c-b52a-704f13995208)
 
 ## Install API Using Helm
