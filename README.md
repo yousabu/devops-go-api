@@ -11,8 +11,12 @@
 ## Build Docker Image
     docker build -t instaapp .
     
-## Run API Using Docker-Compose
+## Install API Using Docker-Compose
     docker-compose up -d
 
 ## Screenshot From Running API
 ![Screenshot from 2023-06-09 15-55-26](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/21446643-0613-472c-b52a-704f13995208)
+
+## Install API Using Helm
+    helm install inastapp-api instaapp/
+![Screenshot from 2023-06-09 16-06-48](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/a863bd79-b326-4df6-bf0a-1d6d8a946eeb)
