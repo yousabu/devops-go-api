@@ -3,13 +3,13 @@
 - it shoud be in  instabug-intern-challenge/ dir.
 
 ## Install Api Locally
-    ```shell
     git clone https://github.com/yousabu/instabug-intern-challenge.git
     cd instabug-intern-challenge/
     go build -o main .
     ./main
 
+## Build Docker Image
+    docker build -t instaapp .
     
 ## Run API Using Docker-Compose
-    ```shell
     docker-compose up -d
