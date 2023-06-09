@@ -18,7 +18,7 @@ services:
       - mynetwork
 
   instabug:
-    image: instaapp:latest
+    image: youssefabu/instaapp:latest
     ports:
       - 9090:9090
     env_file:
