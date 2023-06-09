@@ -10,7 +10,7 @@
 
 ## Build Docker Image
     docker build -t instaapp .
-    
+Dockerfile Built in the way that make it as lightweight as possible
 ## Run API And It's Database Using Docker-Compose
     docker-compose up -d
 - In Docker-compose The Api Will Start Only After Mysql DB Be Healthy
