@@ -13,3 +13,6 @@
     
 ## Run API Using Docker-Compose
     docker-compose up -d
+
+## Screenshot From Running API
+![Screenshot from 2023-06-09 15-55-26](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/21446643-0613-472c-b52a-704f13995208)
