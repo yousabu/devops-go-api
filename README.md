@@ -28,9 +28,7 @@
     kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
     
 ## Enable Sync Between Github & K8s ArgoCD Cluster By:
-1- Install API By Using Helm Charts Command.
-#OR
-2- By Run Application.yaml K8s File And It Will Sync Automatically
+1- Install API By Using Helm Charts Command OR By Run Application.yaml K8s File And It Will Sync Automatically.
 #
     kubectl apply -f Application.yaml
 
