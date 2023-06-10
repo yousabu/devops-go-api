@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/yousabu/instabug-intern-challenge.git
-    path: instaapp
+    path: kubernetes
     targetRevision: HEAD
     directory:
       recurse: true
