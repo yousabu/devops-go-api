@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	
 	http.ListenAndServe(":9090", &handler{})
 }
 
@@ -27,6 +26,8 @@ func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	switch r.Method {
+
+    
 	case "GET":
 		rs, err := _connection.Query(`SELECT id,created_at FROM stuff`)
 		if err != nil {
@@ -34,13 +35,17 @@ func (h *handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			w.Write([]byte("Internal Server Error"))
 			return
 		}
+		type row struct {
+			ID        int       `json:"id"`
+			CreatedAt time.Time `json:"created_at"`
+			}
 
 		var ret []row
 		for rs.Next() {
 			cur := row{}
 			err = rs.Scan(
-				&cur.id,
-				&cur.createdAt,
+				&cur.ID,
+				&cur.CreatedAt,
 			)
 
 			if err != nil {
