@@ -16,12 +16,14 @@
 - In Docker-compose The Api Will Start Only After Mysql DB Be Healthy
 
 ## Screenshot From Running API Localy With Docker-compose
-![Screenshot from 2023-06-10 23-09-06](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/2dd37c53-716c-4980-a111-df84d7f657b8)
+![Screenshot from 2023-06-10 23-09-06](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/b04ac944-b4b2-4d17-8fa2-5ccad0d3e923)
+
 
 
 ## Install API Using Helm
     helm install inastapp-api instaapp/
-![Screenshot from 2023-06-10 23-20-48](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/a1895e0c-a7c9-47d1-a0ad-8cbbf14904c0)
+![Screenshot from 2023-06-10 23-20-48](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/b58d0696-0021-4257-b93f-977b86fc238d)
+
 
 
 
@@ -39,11 +41,13 @@ and it also point to helm package.
 
 
 ## Added autoscaling manifest for number of replicas for api deployment only
-![Screenshot from 2023-06-10 23-25-56](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/8c607653-cdc4-45b4-acad-babbc28ae684)
+![Screenshot from 2023-06-10 23-25-56](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/b4de4569-c129-41c1-bfb1-f4d45d0effee)
+
 
 
 #
 - All Tests Done on Kubelet Cluster one master & one worker.
 
-![Screenshot from 2023-06-10 23-22-15](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/282f82bc-f8fa-4310-b4bd-470dcf7a681b)
+
+![Screenshot from 2023-06-10 23-22-15](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/cfb129bd-dc7d-402d-822b-f6e09c1e5e9f)
 
