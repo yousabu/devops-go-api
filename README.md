@@ -19,6 +19,12 @@
 ![Screenshot from 2023-06-10 23-09-06](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/b04ac944-b4b2-4d17-8fa2-5ccad0d3e923)
 
 
+## Install API Using Kubectl
+     kubectl apply -k .
+
+![Screenshot from 2023-06-13 15-43-45](https://github.com/yousabu/instabug-intern-challenge/assets/66924041/148cfd52-a1e9-455a-85cb-b77625139fcf)
+
+
 
 ## Install API Using Helm
     helm install inastapp-api instaapp/
