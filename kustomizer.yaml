@@ -1,8 +1,0 @@
-resources:
-  -  ./kubernetes/secrets.yaml
-  -  ./kubernetes/configmap.yaml
-  -  ./kubernetes/pv.yaml
-  -  ./kubernetes/pvc.yaml
-  -  ./kubernetes/mysql_statefulset.yaml
-  -  ./kubernetes/instaap_deploymentyaml
-  -  ./kubernetes/autoscaling.yaml
