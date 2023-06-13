@@ -1,10 +1,10 @@
-1- Fix bugs in code
-2- Dockerizing App
-3- Compose the API image & Mysql
-4- CI/CD Jenkins Pipeline
-5- Kubernetes + packaging it using helm & kustomization file
-6- ArgoCD for GitOps
-7- Horizontal Pod Autoscaler
+- Fix bugs in code
+- Dockerizing App
+- Compose the API image & Mysql
+- CI/CD Jenkins Pipeline
+- Kubernetes + packaging it using helm & kustomization file
+- ArgoCD for GitOps
+- Horizontal Pod Autoscaler
 
 ## Notes
 - The `.env` file is used to store the required environment variables for the application. Ensure that you provide the correct values for `MYSQL_HOST`, `MYSQL_USER`, `MYSQL_PASS`, and `MYSQL_PORT`.
