@@ -1,8 +1,0 @@
-resources:
-  -  secrets.yaml
-  -  configmap.yaml
-  -  pv.yaml
-  -  pvc.yaml
-  -  mysql_statefulset.yaml
-  -  instaap_deploymentyaml
-  -  autoscaling.yaml
