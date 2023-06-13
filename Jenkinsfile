@@ -2,6 +2,10 @@ pipeline {
     agent any
 
     stages {
+        stage ("git checkout"){
+            steps {
+                git 'https://github.com/yousabu/instabug-intern-challenge.git'
+            }
         stage('Build') {
             steps {
                 script {
